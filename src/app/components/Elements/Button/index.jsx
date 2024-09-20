@@ -1,7 +1,10 @@
 const Button = (props) => {
-    const {className,children} = props;
+    const {className,children,onClick} = props;
     return (
-        <button className= {`font-semibold rounded-md ${className}`} >
+        <button 
+            className= {`font-semibold rounded-md ${className}`} 
+            onClick={onClick}
+        >
             {children}
         </button>
     )

@@ -25,6 +25,8 @@ module.exports = {
         'button-finish': '#5E9B65',
         'button-view-image': '#8A88FF',
         'button-view-files': '#E88741',
+        'button-add': '#1DF23F',
+        'date-input': '#ECE6F0',
       }
     },
   },

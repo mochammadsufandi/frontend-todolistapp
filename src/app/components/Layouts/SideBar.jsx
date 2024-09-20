@@ -7,7 +7,7 @@ import {faChevronRight, faCalendarDays, faCheckDouble, faChartPie, faSquarePerso
 
 const SideBar = (props) => {
     return (
-        <div className="w-3/12 bg-bg-color-menu py-5 px-8 rounded-[20px] z-10 fixed m-5 h-[96vh] overflow-y-scroll">
+        <div className="w-[23%] bg-bg-color-menu py-5 px-8 rounded-[20px] z-10 fixed m-5 h-[96%] overflow-y-scroll">
             <LabelBox>Menu</LabelBox>
             <SearchBar placeholder="Search"/>
 

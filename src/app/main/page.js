@@ -7,7 +7,7 @@ const MainPage = () => {
     return(
         <main>
             <SideBar/>
-            <Main/> 
+            <Main/>
         </main>
     )
 }

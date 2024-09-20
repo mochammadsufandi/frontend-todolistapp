@@ -1,8 +1,10 @@
 const InputLabel = (props) => {
-    const {children, clasName} = props;
+    const {children, name, className} = props;
     return(
         <div>
-            <p>{children}</p>
+            <label className={`cursor-pointer ${className}`} htmlFor={name}>
+                {children}
+            </label>
         </div>
     )
 }

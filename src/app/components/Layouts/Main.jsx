@@ -6,13 +6,14 @@ import TodoInfoBox from "../Fragments/TodoInfoBox";
 const { default: HeaderText } = require("../Elements/HeaderText")
 
 const Main = (props) => {
+    const {onOpen} = props;
     return (
         <div className="flex">
-            {/* <div className="w-3/12 h-[100vh] fixed bg-bg-color-menu">
+            <div className="w-[22%] h-[100%] fixed bg-bg-color-menu">
 
-            </div> */}
+            </div>
 
-            <div className="ml-[30%] flex flex-col w-full mr-10">
+            <div className="ml-[25%] flex flex-col w-full mr-10">
                 <div className="flex">
                     <div className="mt-8 w-full">
                         <div className="ml-16">
@@ -24,7 +25,9 @@ const Main = (props) => {
                             </h1>
                         </div>
 
-                        <Button className="bg-bg-color-menu p-3 mt-8 w-40">
+                        <Button className="bg-bg-color-menu p-3 mt-8 w-40"
+                            onClick={onOpen}
+                        >
                             <HeaderText className="font-bold text-lg flex gap-3">
                                 <FontAwesomeIcon icon={faPlus} className="w-5 h-5"/>
                                 Add Todo
@@ -152,8 +155,6 @@ const Main = (props) => {
                             </TodoInfoBox>
                         </div>
                     </div>
-
-                    
 
                 </div>
             </div>

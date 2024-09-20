@@ -12,6 +12,7 @@ const SearchBar = (props) => {
             </Button>
             <Input 
                 placeholder={placeholder}
+                type = {'text'}
                 className="w-full text-center bg-search-bar text-lg rounded-[20px] overflow-hidden" 
             />
             <Button>
