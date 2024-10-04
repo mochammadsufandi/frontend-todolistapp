@@ -1,10 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Input from "../Elements/Input";
-import InputLabel from "../Elements/InputLabel";
+import Input from "../../Elements/Input";
+import InputLabel from "../../Elements/InputLabel";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 
 const InputFragment = (props) => {
-    const {name,placeholder,type,accept,className,children} = props
+    const {name,placeholder,type,accept,className,children,onChange,value,disabled} = props;
+
     return (
         <div className={className}>
             { type === 'file' ? (
@@ -24,10 +25,13 @@ const InputFragment = (props) => {
                         <FontAwesomeIcon icon={faFile} className="w-5 h-5 inline-block"/>
                         <Input 
                             name={name}
+                            value={value}
                             className="hidden"
                             type={type}
                             accept={accept}
-                        />
+                            onChange={onChange}
+                            disabled={disabled}
+                            />
                     </InputLabel>
 
                 </>
@@ -38,8 +42,11 @@ const InputFragment = (props) => {
                         type={type} 
                         id={name}
                         name={name} 
+                        value={value}
                         placeholder={placeholder} 
                         className="w-full text-center bg-search-bar text-xs rounded-lg overflow-hidden p-2 mt-1"
+                        onChange={onChange}
+                        disabled={disabled}
                     />
                 </>
             )}

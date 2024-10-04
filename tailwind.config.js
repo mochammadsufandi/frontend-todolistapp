@@ -20,13 +20,15 @@ module.exports = {
         'menu-button-2': '#FAD1D1',
         'profile-neck': '#F55C5C',
         'todo-bar-1': '#A9A7FF',
-        'todo-bar-2': '#F4DBDB',
+        'todo-bar-2': '#C5CEFB',
         'category-color-urgent': '#FF2F2F',
         'button-finish': '#5E9B65',
         'button-view-image': '#8A88FF',
         'button-view-files': '#E88741',
         'button-add': '#1DF23F',
+        'button-active': '#FF5252',
         'date-input': '#ECE6F0',
+        'calendar-header': '#EC272C'
       }
     },
   },

@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import HeaderText from "../Elements/HeaderText";
-import LabelBox from "./HeaderMenu";
+import HeaderText from "../../Elements/HeaderText";
+import LabelBox from "../HeaderMenu";
 import { faClose, faSquarePlus } from "@fortawesome/free-solid-svg-icons";
-import Button from "../Elements/Button";
+import Button from "../../Elements/Button";
 
 const HeaderInput = (props) => {
     const {onClose} = props;
